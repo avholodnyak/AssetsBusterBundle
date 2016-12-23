@@ -9,4 +9,4 @@ services:
                 - "%assets_buster.busters_path%"
                 - "%assets_buster.version_format%"
                 - "@avholodnyak.assets_buster.busters_file_loader"
-            public: true
+            public: false
