@@ -12,7 +12,7 @@ interface BustersFileLoaderInterface
     /**
      * Reads the basters file and returns an array of hashes for each asset file.
      *
-     * @param string $path Path to the basters files
+     * @param string $path Path to the basters file
      *
      * @return array Array of hashes for each asset file (hash => asset_file)
      *
