@@ -1,0 +1,20 @@
+{
+    "name": "avholodnyak/assets-buster-bundle",
+    "description": "This bundle provides support for cache busting using buster files. It uses custom version strategies feature that was introduced in Symfony 3.1.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Holodnyak",
+            "email": "andrey.holodnyak@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AVHolodnyak\\AssetsBusterBundle\\": ""
+        }
+    },
+    "require": {
+        "symfony/http-kernel": "^3.1"
+    }
+}
