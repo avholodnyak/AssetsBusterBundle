@@ -58,7 +58,7 @@ class AssetsBusterBundleTests extends \PHPUnit_Framework_TestCase
     {
         $templating = $this->createTemplatingWithDefaultVersionFormat();
 
-        $versionalizedAsset = $this->getVersionalizedAssetByPHPEngine($asset, $templating);
+        $versionalizedAsset = $this->getAssetVersionalizedByPHPEngine($asset, $templating);
 
         $this->assertEquals($expectedVersionalizedAsset, $versionalizedAsset);
     }
@@ -73,7 +73,7 @@ class AssetsBusterBundleTests extends \PHPUnit_Framework_TestCase
     {
         $templating = $this->createTemplatingWithCustomVersionFormat();
 
-        $versionalizedAsset = $this->getVersionalizedAssetByPHPEngine($asset, $templating);
+        $versionalizedAsset = $this->getAssetVersionalizedByPHPEngine($asset, $templating);
 
         $this->assertEquals($expectedVersionalizedAsset, $versionalizedAsset);
     }
@@ -141,7 +141,7 @@ class AssetsBusterBundleTests extends \PHPUnit_Framework_TestCase
      *
      * @return string Versionalized asset that was rendered in php template using $view['assets']->getUrl() function
      */
-    private function getVersionalizedAssetByPHPEngine($asset, EngineInterface $templating)
+    private function getAssetVersionalizedByPHPEngine($asset, EngineInterface $templating)
     {
         return trim($templating->render("php-asset.html.php", array(
             "assetPath" => $asset
