@@ -1,0 +1,12 @@
+services:
+    avholodnyak.assets_buster.busters_file_loader:
+            class: AVHolodnyak\AssetsBusterBundle\Asset\VersionStrategy\BustersFileLoader
+            public: false
+
+    avholodnyak.assets_buster.version_strategy:
+            class: AVHolodnyak\AssetsBusterBundle\Asset\VersionStrategy\AssetsBusterVersionStrategy
+            arguments:
+                - "%assets_buster.busters_path%"
+                - "%assets_buster.version_format%"
+                - "@avholodnyak.assets_buster.busters_file_loader"
+            public: true
