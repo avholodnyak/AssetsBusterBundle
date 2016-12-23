@@ -1,0 +1,8 @@
+framework:
+    secret: "Dummy secret code"
+    router:
+        resource: ""
+    templating:
+        engines: ["twig", "php"]
+    assets:
+      base_path: "/assets"

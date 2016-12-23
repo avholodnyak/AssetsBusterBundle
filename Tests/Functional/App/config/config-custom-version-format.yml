@@ -1,0 +1,6 @@
+imports:
+    - { resource: config.yml }
+
+assets_buster:
+    busters_path: "%kernel.root_dir%/config/busters.json"
+    version_format: "%%s?custom-version-format=%%s"

@@ -1,0 +1,5 @@
+{
+  "js/test-js-asset.js": "version-for-js-asset",
+  "css/test-styles-asset.css": "version-for-styles-asset-2",
+  "/img/folder/test-image-asset.jpg": "version-for-image-asset"
+}
